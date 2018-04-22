@@ -1,51 +1,27 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\2cbfd5a0627acd92b2f55358c321e5ad\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\ccf1827530dcf133a32a5d946605af10\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\c394b665185c01a97e2c120148228a03\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\96e97253282bd73b21bc95fe9fea15ed\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\20469e1def20820adbed9cd192000019\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\a8b166a1f07a45a1cd6568b7b7e13bc2\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\4cd69e42977f5649d34d782b4147b41f\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d189bb896f05d17ca3c1ee8f11e46bc0\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\06b795363b34421650da46faa82949de\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
 	package
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:2:5-42
 	android:versionName
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
-		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-	android:versionCode
-		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-10:12
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:4:5-6:38
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\2cbfd5a0627acd92b2f55358c321e5ad\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\2cbfd5a0627acd92b2f55358c321e5ad\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\ccf1827530dcf133a32a5d946605af10\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\ccf1827530dcf133a32a5d946605af10\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\c394b665185c01a97e2c120148228a03\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\c394b665185c01a97e2c120148228a03\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\96e97253282bd73b21bc95fe9fea15ed\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\96e97253282bd73b21bc95fe9fea15ed\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\20469e1def20820adbed9cd192000019\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\20469e1def20820adbed9cd192000019\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\a8b166a1f07a45a1cd6568b7b7e13bc2\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\a8b166a1f07a45a1cd6568b7b7e13bc2\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\4cd69e42977f5649d34d782b4147b41f\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\4cd69e42977f5649d34d782b4147b41f\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d189bb896f05d17ca3c1ee8f11e46bc0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d189bb896f05d17ca3c1ee8f11e46bc0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\06b795363b34421650da46faa82949de\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\06b795363b34421650da46faa82949de\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:25:5-20
 	android:supportsRtl
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:6:9-35
 	android:allowBackup
@@ -56,35 +32,20 @@ ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidMa
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:8:22-75
 uses-sdk
 INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\2cbfd5a0627acd92b2f55358c321e5ad\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\2cbfd5a0627acd92b2f55358c321e5ad\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\ccf1827530dcf133a32a5d946605af10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\ccf1827530dcf133a32a5d946605af10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\c394b665185c01a97e2c120148228a03\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\c394b665185c01a97e2c120148228a03\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\96e97253282bd73b21bc95fe9fea15ed\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\96e97253282bd73b21bc95fe9fea15ed\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\20469e1def20820adbed9cd192000019\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\20469e1def20820adbed9cd192000019\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\a8b166a1f07a45a1cd6568b7b7e13bc2\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\a8b166a1f07a45a1cd6568b7b7e13bc2\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\4cd69e42977f5649d34d782b4147b41f\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\4cd69e42977f5649d34d782b4147b41f\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d189bb896f05d17ca3c1ee8f11e46bc0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d189bb896f05d17ca3c1ee8f11e46bc0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\06b795363b34421650da46faa82949de\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\06b795363b34421650da46faa82949de\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\2cbfd5a0627acd92b2f55358c321e5ad\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.1.0] C:\Users\lee\AndroidStudioProjects\ToastHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml

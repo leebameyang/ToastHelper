@@ -12,7 +12,6 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:supportsRtl="true" />
 
 </manifest>
