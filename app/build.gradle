@@ -2,8 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.leebameyang'
 
+
 android {
     compileSdkVersion 26
+    buildToolsVersion "27.0.2"
 
     lintOptions {
         abortOnError false
