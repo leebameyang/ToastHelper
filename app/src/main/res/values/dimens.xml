@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontSize">18px</dimen>
+    <dimen name="backgroundPaddingLeft">24px</dimen>
+    <dimen name="backgroundPaddingRight">24px</dimen>
+    <dimen name="backgroundPaddingTop">12px</dimen>
+    <dimen name="backgroundPaddingBottom">12px</dimen>
+</resources>
