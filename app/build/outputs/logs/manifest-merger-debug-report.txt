@@ -13,6 +13,7 @@ ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidMa
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:4:5-6:38
+MERGED from [ToastHelper:library:unspecified] C:\Users\lee\AndroidStudioProjects\ToastHelper\library\build\intermediates\bundles\default\AndroidManifest.xml:13:5-15:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lee\.android\build-cache\b9111f5ba6821eca08e3f9fd4676e7b691b4e722\output\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\lee\.android\build-cache\c64308f52552367a304477f720847ed470bf0c0b\output\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\lee\.android\build-cache\6450fb490cf05f2c18f2070aaa88363cf5486bb0\output\AndroidManifest.xml:25:5-29:19
@@ -29,10 +30,12 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\lee\.android\build-c
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:5:9-35
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:8:5-78
+MERGED from [ToastHelper:library:unspecified] C:\Users\lee\AndroidStudioProjects\ToastHelper\library\build\intermediates\bundles\default\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:8:22-75
 uses-sdk
 INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [ToastHelper:library:unspecified] C:\Users\lee\AndroidStudioProjects\ToastHelper\library\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lee\.android\build-cache\b9111f5ba6821eca08e3f9fd4676e7b691b4e722\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\lee\.android\build-cache\c64308f52552367a304477f720847ed470bf0c0b\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\lee\.android\build-cache\6450fb490cf05f2c18f2070aaa88363cf5486bb0\output\AndroidManifest.xml:21:5-23:63
