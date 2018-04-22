@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.leebameyang.toasthelper.test" >
+    package="com.leebameyang.toasthelper.test">
 
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="26" />
-
-    <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
-        android:functionalTest="false"
-        android:handleProfiling="false"
-        android:label="Tests for com.leebameyang.toasthelper"
-        android:targetPackage="com.leebameyang.toasthelper" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
 
     <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.leebameyang.toasthelper"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.leebameyang.toasthelper"/>
 </manifest>
