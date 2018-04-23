@@ -37,7 +37,7 @@ and you can also use the image resources you created as a background.
 				 R.dimen.paddingLeft)
           .setDuration(Attribute.DURATION_SHORT)
           .setAnimation(Attribute.ANIMATION_POP)
-          /*.setFrame(Attribute.ROUND_FRAME)*/
+          .setFrame(Attribute.ROUND_FRAME) // If you want to use background resources, do not use frames.
 	  .setBackground(R.drawable.toast)
 	  .setBackground
           .show();
