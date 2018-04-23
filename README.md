@@ -47,6 +47,21 @@ and you can also use the image resources you created as a background.
           .show();
 </pre>
 
+# Init Default Attribute
+<pre>
+     ToastHelper.init(this)
+             .setText("Message")
+	     .show();
+	     
+     If you wrote example like this, Applied as Default property.	     
+     
+     setTextColor(R.color.colorWhite)
+     setTextSize(Attribute.TYPE_DIP, context.getResources().getDimension(R.dimen.fontSize))
+     setFrame(Attribute.ROUND_FRAME)
+     setDuration(Attribute.DURATION_SHORT)
+     setGravity(Attribute.GRAVITY_BOTTOM_CENTER)
+</pre>
+
 # License
 <pre>
 Copyright [2018] [LEE MINWOO]
