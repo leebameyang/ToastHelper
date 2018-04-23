@@ -31,7 +31,7 @@ and you can also use the image resources you created as a background.
 
 # Example
 <pre>
-  ```java
+  `java
   ToastHelper.init(context)
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
@@ -46,7 +46,7 @@ and you can also use the image resources you created as a background.
 	  .setBackground(R.drawable.toast)
 	  .setGravity(Attribute.CENTRAL)
           .show();
-  ```
+	  `
 </pre>
 
 # Init Default Attribute
