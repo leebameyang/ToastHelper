@@ -35,12 +35,11 @@ and you can also use the image resources you created as a background.
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
           .setTextColor(R.color.colorPrimary)
-	  .text("dd").textColor("WHITE")
-          .setForTextViewPadding(<span>R.dimen.paddingTop</span>,
+          .setForTextViewPadding(R.dimen.paddingTop,
 			         R.dimen.paddingRight,
 		  	         R.dimen.paddingBottom,
 				 R.dimen.paddingLeft)
-          .setDuration(Attribute.DURATION_SHORT)
+          .setDuration(Attribute.<span>DURATION_SHORT</span> "BLUE")
           .setAnimation(Attribute.ANIMATION_POP)
           .setFrame(Attribute.ROUND_FRAME) // If you want to use background resources, do not use frames.
 	  .setBackground(R.drawable.toast)
