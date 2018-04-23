@@ -31,6 +31,22 @@ and you can also use the image resources you created as a background.
 
 # Example
 <pre>
+<span class="pl-k>new</span>
+"StyleableToast."
+		 <span class=pl-smi>Builder</span>
+		 "(context).text("
+				  <span class="pl-s">
+						    <span class="pl-pds>"</span>
+						    "Hello world!"
+						    <span class="pl-pds>"</span>
+				  </span>	    
+				  ").textColor("
+				  <span class="pl-smi>COlor</span>
+	<span class="pl-c1>
+	<span class="pl-k>.</span>
+		     "WHITE"
+			    </span>
+			    ")
   ToastHelper.init(context)
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
@@ -39,7 +55,7 @@ and you can also use the image resources you created as a background.
 			         R.dimen.paddingRight,
 		  	         R.dimen.paddingBottom,
 				 R.dimen.paddingLeft)
-          .setDuration("Attribute.<span class="tx">DURATION_SHORT</span><span class="tx_cs>"BLUE"</span>")
+          .setDuration(Attribute.DURATION_SHORT)
           .setAnimation(Attribute.ANIMATION_POP)
           .setFrame(Attribute.ROUND_FRAME) // If you want to use background resources, do not use frames.
 	  .setBackground(R.drawable.toast)
