@@ -31,12 +31,12 @@ and you can also use the image resources you created as a background.
 
 # Example
 <pre>
-```
   ToastHelper.init(context)
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
           .setTextColor(R.color.colorPrimary)
-          .setForTextViewPadding(R.dimen.paddingTop,
+          .setForTextViewPadding(
+	  .textColor("<span>R.dimen.paddingTop</span> "BLUE"),
 			         R.dimen.paddingRight,
 		  	         R.dimen.paddingBottom,
 				 R.dimen.paddingLeft)
@@ -46,7 +46,6 @@ and you can also use the image resources you created as a background.
 	  .setBackground(R.drawable.toast)
 	  .setGravity(Attribute.CENTRAL)
           .show();
-```
 </pre>
 
 
