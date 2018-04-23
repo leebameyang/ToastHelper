@@ -4,7 +4,7 @@ This library can customize toast notifications to your liking,<br/>
 and you can also use the image resources you created as a background.
 
 <div>
-   <img src="" width="200">
+   <img src="https://user-images.githubusercontent.com/33782600/39126359-13fb1cfc-473d-11e8-9b3d-56a376b1c3a8.png" width="780" height="480">
 </div>
 
 # Add to your Project Level build.gradle 
