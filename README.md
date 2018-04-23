@@ -44,6 +44,6 @@ and you can also use the image resources you created as a background.
           .setAnimation(Attribute.ANIMATION_POP)
           .setFrame(Attribute.ROUND_FRAME) // If you want to use background resources, do not use frames.
 	  .setBackground(R.drawable.toast)
-	  .setBackground
+	  .setGravity(Attribute.CENTRAL)
           .show();
 </pre>
