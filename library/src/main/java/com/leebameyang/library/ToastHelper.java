@@ -151,7 +151,7 @@ public class ToastHelper {
         this.params.gravity = gravity;
 
         switch (gravity) {
-            case Attribute.CENTRAL :
+            case Attribute.GRAVITY_CENTRAL:
                 this.setWindowManagerParams(
                         WindowManager.LayoutParams.WRAP_CONTENT,
                         WindowManager.LayoutParams.WRAP_CONTENT,
@@ -352,10 +352,10 @@ public class ToastHelper {
      **/
     private void setDefaultAttribute(Context context) {
         setTextColor(R.color.colorWhite)
-                .setTextSize(TypedValue.COMPLEX_UNIT_DIP, context.getResources().getDimension(R.dimen.fontSize))
+                .setTextSize(Attribute.TYPE_DIP, context.getResources().getDimension(R.dimen.fontSize))
                 .setFrame(Attribute.ROUND_FRAME)
                 .setDuration(Attribute.DURATION_SHORT)
-                .setGravity(Attribute.BOTTOM_CENTER)
+                .setGravity(Attribute.GRAVITY_BOTTOM_CENTER)
                 .setWindowManagerParams(
                         WindowManager.LayoutParams.WRAP_CONTENT,
                         WindowManager.LayoutParams.WRAP_CONTENT,

@@ -10,11 +10,11 @@ import java.lang.annotation.RetentionPolicy;
 public class Attribute {
 
     @Retention(RetentionPolicy.SOURCE)
-    @IntDef({TypedValue.COMPLEX_UNIT_SP, TypedValue.COMPLEX_UNIT_DIP})
+    @IntDef({TYPE_SP, TYPE_DIP})
     public @interface TextSize {}
 
     @Retention(RetentionPolicy.SOURCE)
-    @IntDef({TOP_CENTER, CENTRAL, BOTTOM_CENTER, Gravity.LEFT})
+    @IntDef({GRAVITY_TOP_CENTER, GRAVITY_CENTRAL, GRAVITY_BOTTOM_CENTER, Gravity.LEFT})
     public @interface GravityToast {}
 
     @Retention(RetentionPolicy.SOURCE)
@@ -29,13 +29,16 @@ public class Attribute {
     @IntDef({DURATION_VERY_SHORT, DURATION_SHORT, DURATION_MEDIUM, DURATION_LONG, DURATION_VERY_LONG})
     public @interface Duration {}
 
+    public static final int TYPE_SP = TypedValue.COMPLEX_UNIT_SP;
+    public static final int TYPE_DIP = TypedValue.COMPLEX_UNIT_DIP;
+
     public static final int SQUARE_FRAME = -1;
     public static final int ROUND_FRAME = -2;
     public static final int FILL_FRAME = -3;
 
-    public static final int TOP_CENTER = Gravity.TOP | Gravity.CENTER;
-    public static final int CENTRAL = Gravity.CENTER | Gravity.CENTER;
-    public static final int BOTTOM_CENTER = Gravity.BOTTOM | Gravity.CENTER;
+    public static final int GRAVITY_TOP_CENTER = Gravity.TOP | Gravity.CENTER;
+    public static final int GRAVITY_CENTRAL = Gravity.CENTER | Gravity.CENTER;
+    public static final int GRAVITY_BOTTOM_CENTER = Gravity.BOTTOM | Gravity.CENTER;
 
     public static final int ANIMATION_FADE_IN = 1;
     public static final int ANIMATION_FLY_FROM_LEFT = 2;
