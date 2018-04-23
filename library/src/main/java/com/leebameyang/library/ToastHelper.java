@@ -17,14 +17,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.leebameyang.library.utils.AccessibilityUtil;
 import com.leebameyang.library.utils.AnimationUtil;
 
 
 public class ToastHelper {
 
-    public static int REQ_CODE_OVERLAY_PERMISSION = 4233;
-
+    private static int REQ_CODE_OVERLAY_PERMISSION = 4233;
     private final Context mContext;
     private final View mView;
     private final TextView mTextView;
@@ -41,7 +39,7 @@ public class ToastHelper {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.mContext = context;
         this.mView = onCreateView(context, layoutInflater);
-       // this.mViewGroup = ((Activity) context).findViewById(android.R.id.content);
+        //this.mViewGroup = ((Activity) context).findViewById(android.R.id.content);
         this.mTextView = this.mView.findViewById(R.id.basic_toast);
         this.attribute = new Attribute();
         setDefaultAttribute(context);
@@ -81,18 +79,6 @@ public class ToastHelper {
     }
 
     /**
-     * TextView의 텍스트를 설정
-     * @param text Toast로 출력될 메세지
-     * @param gravity 출력될 메세지의 위치 지정
-     * @return 현재 ToastHelper 객체
-     **/
-    public ToastHelper setText (String text, @Attribute.GravityStyle int gravity) {
-        this.mTextView.setText(text.toString());
-        this.mTextView.setGravity(gravity);
-        return this;
-    }
-
-    /**
      * TextView의 텍스트 색상을 설정
      * @param colorId R.id.color
      * @return 현재 ToastHelper 객체
@@ -128,6 +114,7 @@ public class ToastHelper {
                 break;
             case Attribute.FILL_FRAME :
                 this.mTextView.setBackgroundResource(R.drawable.fill_frame);
+                setForTextViewPadding(15,0,15,0);
                 setWindowManagerParams(
                         WindowManager.LayoutParams.MATCH_PARENT,
                         WindowManager.LayoutParams.WRAP_CONTENT,
@@ -150,7 +137,7 @@ public class ToastHelper {
         float paddingBottom = getDimen(R.dimen.backgroundPaddingBottom);
         float paddingLeft = getDimen(R.dimen.backgroundPaddingLeft);
         this.mTextView.setBackground(ContextCompat.getDrawable(mContext, drawableId));
-        this.mTextView.setPadding(convertDIP(paddingLeft), convertDIP(paddingTop), convertDIP(paddingRight), convertDIP(paddingBottom));
+        setForTextViewPadding(paddingTop, paddingRight, paddingBottom, paddingLeft);
         return this;
     }
 
@@ -160,7 +147,19 @@ public class ToastHelper {
      * @return 현재 ToastHelper 객체
      **/
     public ToastHelper setGravity (@Attribute.GravityToast int gravity) {
+        if (params == null) params = new WindowManager.LayoutParams();
         this.params.gravity = gravity;
+
+        switch (gravity) {
+            case Attribute.CENTRAL :
+                this.setWindowManagerParams(
+                        WindowManager.LayoutParams.WRAP_CONTENT,
+                        WindowManager.LayoutParams.WRAP_CONTENT,
+                        gravity,
+                        0,
+                        0);
+                break;
+        }
         return this;
     }
 
@@ -170,27 +169,39 @@ public class ToastHelper {
      * @return 현재 ToastHelper 객체
      **/
     public ToastHelper setWidth(int width) {
-        this.params.width = width;
+        this.params.width = convertDIP(width);
         return this;
     }
 
     /**
-     * Frame의 세로 길이를 설정
-     * @param height 길이 값
-     * @return 현재 ToastHelper 객체
-     **/
-    public ToastHelper setHeight(int height) {
-        this.params.height = height;
-        return this;
-    }
-
-    /**
-     * 파라미터의 y 좌표값을 설정하는 것으로 VerticalMargin 효과를 적용
-     * @param y y 좌표 값
+     * 레이아웃 파라미터의 y 좌표값을 설정하는 것으로 Margin 효과를 적용
+     * @param margin margin 값
      * @return ToastHelper 객체
      **/
-    public ToastHelper setVerticalMargin(int y) {
-        this.params.y = convertDIP(y);
+    public ToastHelper setMarginTop(int margin) {
+        this.setWindowManagerParams(
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                getGravity(),
+                0,
+                convertDIP(margin));
+
+        return this;
+    }
+
+    /**
+     * 레이아웃 파라미터의 y 좌표값을 설정하는 것으로 음수값을 주어 BottomMargin 효과를 적용
+     * @param margin margin 좌표 값
+     * @return ToastHelper 객체
+     **/
+    public ToastHelper setMarginBottom(int margin) {
+        this.setWindowManagerParams(
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                getGravity(),
+                0,
+                convertDIP(-margin));
+
         return this;
     }
 
@@ -202,7 +213,19 @@ public class ToastHelper {
      * @param left 좌측 패딩 값
      **/
     public ToastHelper setForTextViewPadding(int top, int right, int bottom, int left) {
-        this.mTextView.setPadding(left, top, right, bottom);
+        this.mTextView.setPadding(convertDIP(left), convertDIP(top), convertDIP(right), convertDIP(bottom));
+        return this;
+    }
+
+    /**
+     * 텍스트뷰의 상,하,좌,우 시계방향으로 Padding을 설정
+     * @param top 상단 패딩 값
+     * @param right 우측 패딩 값
+     * @param bottom 하단 패딩 값
+     * @param left 좌측 패딩 값
+     **/
+    public ToastHelper setForTextViewPadding(float top, float right, float bottom, float left) {
+        this.mTextView.setPadding(convertDIP(left), convertDIP(top), convertDIP(right), convertDIP(bottom));
         return this;
     }
 
@@ -226,7 +249,6 @@ public class ToastHelper {
         } else {
             this.onPrepareShow();
             ToastTask.getInstance().add(this);
-            AccessibilityUtil.sendAccessibilityEvent(this.mView);
         }
     }
 
@@ -314,6 +336,11 @@ public class ToastHelper {
     }
 
     /**
+     * Gravity 를 반환
+     **/
+    public int getGravity() {return this.params.gravity; }
+
+    /**
      * Context를 반환
      **/
     public Context getContext() {
@@ -323,15 +350,16 @@ public class ToastHelper {
     /**
      * Default 속성 초기화
      **/
-    protected void setDefaultAttribute(Context context) {
+    private void setDefaultAttribute(Context context) {
         setTextColor(R.color.colorWhite)
                 .setTextSize(TypedValue.COMPLEX_UNIT_DIP, context.getResources().getDimension(R.dimen.fontSize))
                 .setFrame(Attribute.ROUND_FRAME)
                 .setDuration(Attribute.DURATION_SHORT)
+                .setGravity(Attribute.BOTTOM_CENTER)
                 .setWindowManagerParams(
                         WindowManager.LayoutParams.WRAP_CONTENT,
                         WindowManager.LayoutParams.WRAP_CONTENT,
-                        Gravity.BOTTOM | Gravity.CENTER,
+                        getGravity(),
                         0,
                         convertDIP(100));
     }
@@ -357,24 +385,24 @@ public class ToastHelper {
      * 토스트 출력 전 필요한 WindowManager 파라미터를 설정하고 반환
      **/
     protected WindowManager.LayoutParams getWindowManagerParams() {
-        final int sdkVersion = Build.VERSION.SDK_INT;
+        final int sdkVersion = android.os.Build.VERSION.SDK_INT;
 
         if (this.params == null) {
             this.params = new WindowManager.LayoutParams();
         }
 
         // API Level 26 이상 부터 TYPE_TOAST를 지원하지 않습니다.
-        if (sdkVersion >= Build.VERSION_CODES.M)
+        if (sdkVersion >= Build.VERSION_CODES.O) {
             this.params.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
-        else {
-            this.params.type = WindowManager.LayoutParams.TYPE_TOAST;
+        } else {
+            this.params.type = WindowManager.LayoutParams.TYPE_PHONE;
         }
 
         // FLAG
         this.params.flags =
-                  WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
-                | WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
-                | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+                        | WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
+                        | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
         this.params.format = PixelFormat.TRANSLUCENT;
         this.params.windowAnimations = AnimationUtil.getSystemAnimationsResource(this.attribute.animation);
         return params;
@@ -411,7 +439,7 @@ public class ToastHelper {
      * SDK Level 26 이상 부터 Permission 변경된 해당 권한을 획득하기 위한 메소드
      **/
     @TargetApi(Build.VERSION_CODES.M)
-    public void onObtainingPermissionOverlayWindow() {
+    private void onObtainingPermissionOverlayWindow() {
         Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + this.mContext.getPackageName()));
         ((Activity) this.mContext).startActivityForResult(intent, REQ_CODE_OVERLAY_PERMISSION);
     }

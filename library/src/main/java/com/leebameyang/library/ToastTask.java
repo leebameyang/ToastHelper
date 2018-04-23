@@ -6,7 +6,6 @@ import android.os.Message;
 import android.util.Log;
 import android.view.WindowManager;
 
-
 import com.leebameyang.library.utils.AnimationUtil;
 
 import java.util.Comparator;
@@ -180,15 +179,15 @@ class ToastTask extends Handler {
         removeMessages(Messages.REMOVE_TOAST);
 
         for (ToastHelper toastHelper : toastTaskQueue) {
-           final WindowManager windowManager =
-                   (WindowManager) toastHelper.getContext().getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
-           if (toastHelper.isShowing()) {
-               try {
-                   windowManager.removeView(toastHelper.getView());
-               } catch (NullPointerException | IllegalArgumentException e) {
-                   Log.e(getClass().getName(), e.toString());
-               }
-           }
+            final WindowManager windowManager =
+                    (WindowManager) toastHelper.getContext().getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
+            if (toastHelper.isShowing()) {
+                try {
+                    windowManager.removeView(toastHelper.getView());
+                } catch (NullPointerException | IllegalArgumentException e) {
+                    Log.e(getClass().getName(), e.toString());
+                }
+            }
         }
 
         toastTaskQueue.clear();

@@ -14,22 +14,12 @@ public class Attribute {
     public @interface TextSize {}
 
     @Retention(RetentionPolicy.SOURCE)
-    @IntDef({Gravity.LEFT, Gravity.RIGHT, Gravity.BOTTOM, Gravity.TOP,
-             Gravity.CENTER, Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL,
-             Gravity.START, Gravity.END})
-    public @interface GravityStyle {}
-
-    @Retention(RetentionPolicy.SOURCE)
-    @IntDef({TOP_CENTER, CENTRAL, BOTTOM_CENTER})
+    @IntDef({TOP_CENTER, CENTRAL, BOTTOM_CENTER, Gravity.LEFT})
     public @interface GravityToast {}
 
     @Retention(RetentionPolicy.SOURCE)
     @IntDef({SQUARE_FRAME, FILL_FRAME, ROUND_FRAME})
     public @interface Frame {}
-
-    @Retention(RetentionPolicy.SOURCE)
-    @IntDef({TOP_MARGIN, VERTICAL_MARGIN, HORIZONTAL_MARGIN})
-    public @interface Margin {}
 
     @Retention(RetentionPolicy.SOURCE)
     @IntDef({ANIMATION_FADE_IN, ANIMATION_FLY_FROM_LEFT, ANIMATION_POP, ANIMATION_SCALE_UP, ANIMATION_FLY_FROM_RIGHT})
@@ -47,10 +37,6 @@ public class Attribute {
     public static final int CENTRAL = Gravity.CENTER | Gravity.CENTER;
     public static final int BOTTOM_CENTER = Gravity.BOTTOM | Gravity.CENTER;
 
-    public static final int TOP_MARGIN = 0;
-    public static final int VERTICAL_MARGIN = 170;
-    public static final int HORIZONTAL_MARGIN = 135;
-
     public static final int ANIMATION_FADE_IN = 1;
     public static final int ANIMATION_FLY_FROM_LEFT = 2;
     public static final int ANIMATION_FLY_FROM_RIGHT = 3;
@@ -65,6 +51,5 @@ public class Attribute {
 
     public int animation;
     public int duration;
-    public int frame;
     protected long priority;
 }
