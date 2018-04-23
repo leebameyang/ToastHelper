@@ -33,9 +33,7 @@ and you can also use the image resources you created as a background.
 <pre>
   ToastHelper.init(context)
           .setText("your message")
-          ```java
 	  .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
-	  ```
           .setTextColor(R.color.colorPrimary)
           .setForTextViewPadding(R.dimen.paddingTop,
 			         R.dimen.paddingRight,
