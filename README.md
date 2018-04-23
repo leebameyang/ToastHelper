@@ -35,7 +35,7 @@ and you can also use the image resources you created as a background.
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
           .setTextColor(R.color.colorPrimary)
-          .setForTextViewPadding(R.dimen.paddingTop,
+          .setForTextViewPadding(<tspan fill="red">R.dimen.paddingTop</tspan>,
 			         R.dimen.paddingRight,
 		  	         R.dimen.paddingBottom,
 				 R.dimen.paddingLeft)
