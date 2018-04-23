@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-20:12
+ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:1:1-11:12
 	package
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:2:5-42
 	android:versionName
@@ -12,7 +12,7 @@ ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidMa
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:4:5-16:19
+ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:4:5-7:19
 MERGED from [com.github.leebameyang:library:unspecified] C:\Users\lee\AndroidStudioProjects\ToastHelper\library\build\intermediates\bundles\default\AndroidManifest.xml:13:5-15:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lee\.android\build-cache\b9111f5ba6821eca08e3f9fd4676e7b691b4e722\output\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\lee\.android\build-cache\c64308f52552367a304477f720847ed470bf0c0b\output\AndroidManifest.xml:25:5-29:19
@@ -24,33 +24,15 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\lee\.a
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\lee\.android\build-cache\929492aefa77a320e02793d47162976a6588ada8\output\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\lee\.android\build-cache\b896ecbe26062e269f926c2f4744ca068cddd58b\output\AndroidManifest.xml:25:5-29:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\lee\.android\build-cache\5b11279ae1b92f542672987868aa7798b8a36e90\output\AndroidManifest.xml:24:5-28:19
-	android:label
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:6:9-41
 	android:supportsRtl
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:6:9-35
 	android:allowBackup
 		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:5:9-35
-	android:theme
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:8:9-59
-activity#com.leebameyang.toasthelper.MainActivity
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:9:9-15:20
-	android:name
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:9:19-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:10:13-14:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:11:17-69
-	android:name
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:11:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:13:17-77
-	android:name
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:13:27-74
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:18:5-78
+ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:9:5-78
 MERGED from [com.github.leebameyang:library:unspecified] C:\Users\lee\AndroidStudioProjects\ToastHelper\library\build\intermediates\bundles\default\AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:18:22-75
+		ADDED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml:9:22-75
 uses-sdk
 INJECTED from C:\Users\lee\AndroidStudioProjects\ToastHelper\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.github.leebameyang:library:unspecified] C:\Users\lee\AndroidStudioProjects\ToastHelper\library\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
