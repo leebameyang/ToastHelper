@@ -31,7 +31,7 @@ and you can also use the image resources you created as a background.
 
 # Example
 <pre>
-  ToastHelper.init(context)
+  ```ToastHelper.init(context)
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
           .setTextColor(R.color.colorPrimary)
@@ -44,7 +44,7 @@ and you can also use the image resources you created as a background.
           .setFrame(Attribute.ROUND_FRAME) // If you want to use background resources, do not use frames.
 	  .setBackground(R.drawable.toast)
 	  .setGravity(Attribute.CENTRAL)
-          .show();
+          .show();```
 </pre>
 
 # Init Default Attribute
