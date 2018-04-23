@@ -30,23 +30,9 @@ and you can also use the image resources you created as a background.
 </pre>
 
 # Example
+<div>
 <pre>
-<span class="pl-k>new</span>
-"StyleableToast."
-		 <span class=pl-smi>Builder</span>
-		 "(context).text("
-				  <span class="pl-s">
-						    <span class="pl-pds>"</span>
-						    "Hello world!"
-						    <span class="pl-pds>"</span>
-				  </span>	    
-				  ").textColor("
-				  <span class="pl-smi>COlor</span>
-	<span class="pl-c1>
-	<span class="pl-k>.</span>
-		     "WHITE"
-			    </span>
-			    ")
+<span>dd</span>
   ToastHelper.init(context)
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
@@ -62,7 +48,7 @@ and you can also use the image resources you created as a background.
 	  .setGravity(Attribute.CENTRAL)
           .show();
 </pre>
-
+</div>
 
 # Init Default Attribute
 <pre>
