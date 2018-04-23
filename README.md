@@ -20,7 +20,7 @@ and you can also use the image resources you created as a background.
 # Add to your App Level build.gradle
 <pre>
   dependencies {
-	compile 'com.github.leebameyang:ToastHelper:1.0.0'
+	compile 'com.github.leebameyang:ToastHelper:1.0.1'
   }
 </pre>
 
