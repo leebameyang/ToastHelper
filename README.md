@@ -30,9 +30,7 @@ and you can also use the image resources you created as a background.
 </pre>
 
 # Example
-<div>
 <pre>
-<span>dd</span>
   ToastHelper.init(context)
           .setText("your message")
           .setTextSize(Attribute.TYPE_SP, R.dimen.fontSize)
@@ -48,7 +46,6 @@ and you can also use the image resources you created as a background.
 	  .setGravity(Attribute.CENTRAL)
           .show();
 </pre>
-</div>
 
 # Init Default Attribute
 <pre>
