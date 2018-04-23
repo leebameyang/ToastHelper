@@ -39,7 +39,7 @@ and you can also use the image resources you created as a background.
 			         R.dimen.paddingRight,
 		  	         R.dimen.paddingBottom,
 				 R.dimen.paddingLeft)
-          .setDuration("Attribute.<span>DURATION_SHORT</span><span>"BLUE"</span>")
+          .setDuration("Attribute.<span class="tx">DURATION_SHORT</span><span class="tx_cs>"BLUE"</span>")
           .setAnimation(Attribute.ANIMATION_POP)
           .setFrame(Attribute.ROUND_FRAME) // If you want to use background resources, do not use frames.
 	  .setBackground(R.drawable.toast)
